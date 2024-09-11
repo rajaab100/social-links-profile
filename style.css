@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+:root{
+    --clr-green:hsl(75, 94%, 57%);
+    --clr-white:hsl(0, 0%, 100%);
+
+    --clr-Grey-700: hsl(0, 0%, 20%);
+    --clr-Grey-800: hsl(0, 0%, 12%);
+    --clr-Grey-900: hsl(0, 0%, 8%);
+
+    --fs-body:14px;
+
+    --ff-body:"Inter", sans-serif;
+
+    --fw-400:400;
+    --fw-600:600;
+    --fw-700:700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-body);
+}
+
+body{
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-400);
+    width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    min-height: 100svh;
+    background-color: var(--clr-Grey-900);
+    color: var(--clr-white);
+
+}
+
+.container{
+    width: 350px;
+    height: 550px;
+    /* min-width: 30%;
+    min-height: 60%; */
+    background-color: var(--clr-Grey-800);
+    margin: auto;
+    margin-top:2.5rem;
+    border-radius: 12px;
+    box-shadow: 0.5px 0.5px 3px 1px rgb(44, 39, 39) ;
+
+
+    display: grid;
+    grid-auto-rows: 2fr 1fr 1fr 3fr;
+}
+
+.profilePic img{
+    display: block;
+    width: 90px;
+    margin: 45px auto;
+    border-radius: 50%;
+}
+
+.name{
+    text-align: center;
+    margin-top: -20px;
+}
+
+.name .fullName{
+    font-weight: var(--fw-700);
+}
+
+.name .address{
+    color: var(--clr-green);
+    font-weight: var(--fw-600);
+    font-size: smaller;
+    padding-top: 10px;
+}
+
+.skill{
+    text-align: center;
+    margin-top: -15px;
+}
+
+.skill p{
+    font-weight: var(--fw-400);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:80%;
+    margin: -60px auto 20px auto;
+}
+
+button{
+    padding: 7px 0;
+    border-radius: 8px;
+    height: 40px;
+    background-color: var(--clr-Grey-700);
+    outline: none;
+    border: none;
+    color: var(--clr-white);
+    font-weight: var(--fw-600);
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--clr-green);
+    color: var(--clr-Grey-900);
+
+}
